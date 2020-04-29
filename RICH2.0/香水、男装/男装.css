@@ -1,0 +1,644 @@
+#img {
+    width: 1366px;
+    height: 3350px;
+    position: absolute;
+    top: 130px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.niuyue {
+    /*纽约制造*/
+    position: relative;
+    top: -600px;
+    left: 615px;
+    font-size: 50px;
+    color: white;
+}
+
+.qiuji {
+    /*秋季男装*/
+    position: relative;
+    top: -430px;
+    left: 195px;
+    font-size: 80px;
+    color: white;
+}
+
+.kuang1 {
+    /*现在购物白框*/
+    position: relative;
+    top: -315px;
+    left: 460px;
+    width: 200px;
+    height: 60px;
+    border: white 1px solid;
+}
+
+.zi1 {
+    /*现在购物*/
+    color: white;
+    font-size: 24px;
+    position: relative;
+    left: 58px;
+    top: 15px;
+}
+
+.kuang2 {
+    /*购买主题灰框框*/
+    position: relative;
+    top: -375px;
+    left: 750px;
+    width: 200px;
+    height: 60px;
+    background-color: #abaaaa;
+}
+
+.zi2 {
+    /*购买主题*/
+    color: white;
+    font-size: 24px;
+    position: relative;
+    left: 56px;
+    top: 15px;
+}
+
+.xs {
+    width: 1366px;
+    height: 581px;
+    overflow: hidden;
+}
+
+.dh {
+    animation: gundong 20s infinite;
+    width: 7200px;
+    height: 800px;
+}
+
+.dh img {
+    margin: 0;
+}
+
+@keyframes gundong {
+    0% {
+        transform: translateX(0);
+    }
+    25% {
+        transform: translateX(0px);
+    }
+    30% {
+        transform: translateX(-1800px);
+    }
+    60% {
+        transform: translateX(-1800px);
+    }
+    65% {
+        transform: translateX(-3166px);
+    }
+    95% {
+        transform: translateX(-3166px);
+    }
+    100% {
+        transform: translateX(-5200px);
+    }
+
+}
+
+.shishang {
+    /*时尚造型*/
+    position: relative;
+    top: -150px;
+    left: 650px;
+    font-size: 24px;
+}
+
+.zuojiantou {
+    /*<左箭头*/
+    position: relative;
+    top: 125px;
+    left: 0px;
+    font-size: 24px;
+}
+
+.youjiantou {
+    /*>右箭头*/
+    position: relative;
+    top: 97px;
+    left: 1366px;
+    font-size: 24px;
+}
+
+.zouxiu1 {
+    position: relative;
+    top: -150px;
+    left: 35px;
+    display: inline-block;
+    margin-left: 20px;
+}
+
+/*走秀文字1开始*/
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.zouxiuzi1 {
+    /*走秀字1*/
+    position: relative;
+    top: -125px;
+    left: 90px;
+    font-size: 20px;
+}
+
+/*走秀文字1钱*/
+.qian1 {
+    /*$129.00*/
+    position: relative;
+    top: -100px;
+    left: 178px;
+    color: #a9ad3d;
+}
+
+/*走秀文字1结束*/
+
+/*走秀文字2开始*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.zouxiuzi2 {
+    /*走秀字1*/
+    position: relative;
+    top: -166px;
+    left: 420px;
+    font-size: 20px;
+}
+
+/*走秀文字2钱*/
+.qian2 {
+    /*$129.00*/
+    position: relative;
+    top: -141px;
+    left: 505px;
+    color: #a9ad3d;
+}
+
+/*走秀文字2结束*/
+
+/*走秀文字3开始*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.zouxiuzi3 {
+    /*走秀字3*/
+    position: relative;
+    top: -206px;
+    left: 740px;
+    font-size: 20px;
+}
+
+/*走秀文字3钱*/
+.qian3 {
+    /*$129.00*/
+    position: relative;
+    top: -183px;
+    left: 830px;
+    color: #a9ad3d;
+}
+
+/*走秀文字3结束*/
+
+/*走秀文字4开始*/
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.zouxiuzi4 {
+    /*走秀字4*/
+    position: relative;
+    top: -248px;
+    left: 1070px;
+    font-size: 20px;
+}
+
+/*走秀文字4钱*/
+.qian4 {
+    /*$129.00*/
+    position: relative;
+    top: -225px;
+    left: 1155px;
+    color: #a9ad3d;
+}
+
+/*走秀文字4结束*/
+
+/*添加购物车1开始*/
+.shangxiakuang1 {
+    /*上下框*/
+    border-color: #c0c0c0;
+    width: 185px;
+    height: 55px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    position: relative;
+    top: -183px;
+    left: 100px;
+}
+
+.wenzi1 {
+    position: relative;
+    top: 20px;
+    left: 52px;
+}
+
+/*添加购物车1结束*/
+
+/*添加购物车2开始*/
+.shangxiakuang2 {
+    border-color: #c0c0c0;
+    width: 185px;
+    height: 55px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    position: relative;
+    top: -244px;
+    left: 430px;
+}
+
+.wenzi2 {
+    position: relative;
+    top: 20px;
+    left: 56px;
+}
+
+/*添加购物车2结束*/
+
+/*添加购物车3开始*/
+.shangxiakuang3 {
+    border-color: #c0c0c0;
+    width: 185px;
+    height: 55px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    position: relative;
+    top: -305px;
+    left: 770px;
+}
+
+.wenzi3 {
+    position: relative;
+    top: 20px;
+    left: 56px;
+}
+
+/*添加购物车3结束*/
+
+/*添加购物车3开始*/
+.shangxiakuang4 {
+    border-color: #c0c0c0;
+    width: 185px;
+    height: 55px;
+    border-top-style: solid;
+    border-bottom-style: solid;
+    position: relative;
+    top: -366px;
+    left: 1085px;
+}
+
+.wenzi4 {
+    position: relative;
+    top: 20px;
+    left: 56px;
+}
+
+/*添加购物车3结束*/
+
+.xiahuaxian {
+    /*下划线*/
+    text-decoration: underline;
+    font-size: 20px;
+    position: relative;
+    top: -300px;
+    left: 650px;
+}
+
+.shizhuangzou {
+    /*时装周*/
+    position: relative;
+    top: -200px;
+}
+
+.qitachangping {
+    /*其他产品*/
+    position: relative;
+    top: -135px;
+    left: 650px;
+    font-size: 24px;
+}
+
+/*男鞋1开始*/
+.nanxie1 {
+    position: relative;
+    top: -50px;
+    left: 70px;
+}
+
+.xiezi1 {
+    /*鞋的字*/
+    position: relative;
+    top: -240px;
+    left: 320px;
+    font-size: 22px;
+}
+
+.xieqian1 {
+    position: relative;
+    top: -220px;
+    left: 320px;
+    font-size: 22px;
+    color: #a9ad3d;
+}
+
+.xiantiao1 {
+    /*线条*/
+    width: 225px;
+    border: #d3d3d3 1.2px;
+    border-top-style: solid;
+    position: relative;
+    top: -220px;
+    left: 320px;
+}
+
+.aixing1 {
+    /*爱心*/
+    position: relative;
+    top: -260px;
+    left: 385px;
+}
+
+.huishou1 {
+    /*回收*/
+    position: relative;
+    top: -292px;
+    left: 417px;
+}
+
+.gouwuche1 {
+    /*购物车*/
+    position: relative;
+    top: -323px;
+    left: 450px;
+}
+
+.dianjigoumai1 {
+    /*点击购买*/
+    position: relative;
+    top: -289px;
+    left: 389px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+}
+
+.zicolor1 {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 45px;
+}
+
+/*男鞋1结束*/
+
+/*男鞋2开始*/
+.nanxie2 {
+    position: relative;
+    top: -511px;
+    left: 700px;
+}
+
+.xiezi2 {
+    /*鞋的字*/
+    position: relative;
+    top: -240px;
+    left: 320px;
+    font-size: 22px;
+}
+
+.xieqian2 {
+    /*鞋子价钱*/
+    position: relative;
+    top: -220px;
+    left: 320px;
+    font-size: 22px;
+    color: #a9ad3d;
+}
+
+.xiantiao2 {
+    /*线条*/
+    width: 225px;
+    border: #d3d3d3 1.2px;
+    border-top-style: solid;
+    position: relative;
+    top: -220px;
+    left: 320px;
+}
+
+.aixing2 {
+    /*爱心*/
+    position: relative;
+    top: -722px;
+    left: 1110px;
+}
+
+.huishou2 {
+    /*回收*/
+    position: relative;
+    top: -753px;
+    left: 1145px;
+}
+
+.gouwuche2 {
+    /*购物车*/
+    position: relative;
+    top: -784px;
+    left: 1180px;
+}
+
+.dianjigoumai2 {
+    /*点击购买*/
+    position: relative;
+    top: -750px;
+    left: 1120px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+}
+
+.zicolor2 {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 45px;
+}
+
+/*男鞋2结束*/
+
+/*男鞋3开始*/
+.nanxie3 {
+    position: relative;
+    top: -520px;
+    left: 70px;
+}
+
+.xiezi3 {
+    /*鞋的字*/
+    position: relative;
+    top: -240px;
+    left: 320px;
+    font-size: 22px;
+}
+
+.xieqian3 {
+    /*鞋的钱*/
+    position: relative;
+    top: -220px;
+    left: 320px;
+    font-size: 22px;
+    color: #a9ad3d;
+}
+
+.xiantiao3 {
+    /*线条*/
+    width: 225px;
+    border: #d3d3d3 1.2px;
+    border-top-style: solid;
+    position: relative;
+    top: -220px;
+    left: 320px;
+}
+
+.aixing3 {
+    /*爱心*/
+    position: relative;
+    top: -730px;
+    left: 385px;
+}
+
+.huishou3 {
+    /*回收*/
+    position: relative;
+    top: -762px;
+    left: 417px;
+}
+
+.gouwuche3 {
+    /*购物车*/
+    position: relative;
+    top: -793px;
+    left: 450px;
+}
+
+.dianjigoumai3 {
+    /*点击购买*/
+    position: relative;
+    top: -759px;
+    left: 389px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+}
+
+.zicolor3 {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 45px;
+}
+
+/*男鞋3结束*/
+
+/*男鞋4开始*/
+.nanxie4 {
+    position: relative;
+    top: -982px;
+    left: 700px;
+}
+
+.xiezi4 {
+    /*鞋的字*/
+    position: relative;
+    top: -240px;
+    left: 320px;
+    font-size: 22px;
+}
+
+.xieqian4 {
+    /*鞋子价钱*/
+    position: relative;
+    top: -220px;
+    left: 320px;
+    font-size: 22px;
+    color: #a9ad3d;
+}
+
+.xiantiao4 {
+    /*线条*/
+    width: 225px;
+    border: #d3d3d3 1.2px;
+    border-top-style: solid;
+    position: relative;
+    top: -220px;
+    left: 320px;
+}
+
+.aixing4 {
+    /*爱心*/
+    position: relative;
+    top: -1193px;
+    left: 1110px;
+}
+
+.huishou4 {
+    /*回收*/
+    position: relative;
+    top: -1225px;
+    left: 1140px;
+}
+
+.gouwuche4 {
+    /*购物车*/
+    position: relative;
+    top: -1256px;
+    left: 1175px;
+}
+
+.dianjigoumai4 {
+    /*点击购买*/
+    position: relative;
+    top: -1220px;
+    left: 1120px;
+    width: 150px;
+    height: 40px;
+    background-color: black;
+}
+
+.zicolor4 {
+    color: white;
+    position: relative;
+    top: 12px;
+    left: 45px;
+}
+
+/*男鞋4结束*/
+
+
+
+

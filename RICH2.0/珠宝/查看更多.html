@@ -1,0 +1,455 @@
+<!DOCTYPE>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RICH</title>
+    <link rel="icon" href="image/logo.ico"/>
+    <link type="text/css" href="../转场.css" rel="stylesheet"/>
+    <style type="text/css">
+        /*主体*/
+        body {
+            margin: 0;
+            padding: 0;
+        }
+
+        #content {
+            /*框架设置*/
+            position: relative;
+            margin: 0 auto;
+            width: 1366px;
+        }
+
+        .header {
+            width: 1366px;
+            background: #ffffff;
+            /*头部的图标和LOGO定位*/
+            /*background: red;*/
+            margin: 0 auto;
+            animation: header 3s;
+            position: fixed;
+            top: 0;
+            z-index:30;
+
+        }
+
+        /*@keyframes header {*/
+        /*0%{*/
+        /*transform: translateY(-50px);*/
+        /*}*/
+        /*100%{*/
+        /*transform: translateY(0px);*/
+        /*}*/
+        /*}*/
+        .header ul, .header li {
+            cursor: pointer;
+            /*列表清零 取消列表符号 并且排成一行*/
+            padding: 0;
+            margin: 0;
+            list-style-type: none;
+            display: inline-block;
+        }
+
+        .header ul li:nth-of-type(1) {
+            /*第一个图标向右边靠*/
+            margin-left: 270px;
+        }
+
+        #logo {
+            /*LOGO向右边靠*/
+            margin-left: 270px;
+            position: relative;
+            top: 10px;
+        }
+
+        #logo:hover {
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.001);
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .header li img:hover {
+            -webkit-transform: scale(1.3);
+            -moz-transform: scale(1.3);
+            -ms-transform: scale(1.3);
+            -o-transform: scale(1.3);
+            transform: scale(1.3);
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+        }
+
+        .header ul li:nth-of-type(6) {
+            /*第五个图标向右边靠*/
+            margin-left: 270px;
+        }
+
+        .header ul li:nth-of-type(2) {
+            margin-left: 10px;
+        }
+
+        .header ul li:nth-of-type(3) {
+            margin-left: 10px;
+        }
+
+        .header ul li:nth-of-type(4) {
+            margin-left: 10px;
+        }
+
+        .header ul li:nth-of-type(7) {
+            margin-left: 10px;
+        }
+
+        .header ul li:nth-of-type(8) {
+            margin-left: 10px;
+        }
+
+        .header ul li:nth-of-type(9) {
+            margin-left: 10px;
+        }
+
+        .aa {
+            border: 1px rgba(200, 200, 200, 0.5) solid;
+            border-radius: 20px;
+            top: 5px;
+            right: 420px;
+            position: absolute;
+            display: none;
+            z-index: 1;
+        }
+
+        .wxa:hover .aa {
+            display: block;
+        }
+
+        hr {
+            margin-bottom: 0;
+            margin-top: 15px;
+            background: #dfdcda;
+            border: #dfdcda 1px solid;
+        }
+
+        #daohang {
+            width: 1000px;
+            margin: 10px auto 0 auto;
+            color: #333333;
+            position: absolute;
+            top: 80px;
+            left: 180px;
+        }
+
+        #daohang ul, #daohang li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        #daohang li {
+            float: left;
+            margin-left: 30px;
+        }
+
+        #daohang li:nth-of-type(1) {
+            margin-left: 150px;
+        }
+
+        #daohang li:last-of-type {
+            clear: right;
+        }
+
+        #daohang a {
+            display: inline-block;
+            color: #888;
+            line-height: 30px;
+            text-align: center;
+            width: 70px;
+            text-decoration: none;
+        }
+
+        #daohang a:hover {
+            border: 1px solid #898a89;
+            -webkit-border-radius: 15px;
+            -moz-border-radius: 15px;
+            border-radius: 15px;;
+            box-sizing: border-box;
+        }
+
+        .gengduo1 {
+            position: absolute;
+            top: 130px;
+            left: 200px;
+        }
+
+        .gengduo2 {
+            position: absolute;
+            top: 580px;
+            left: 200px;
+        }
+
+        .gengduo3 {
+            position: absolute;
+            top: 580px;
+            left: 530px;
+        }
+
+        h2 {
+            font-weight: 300;
+            position: absolute;
+            left: 900px;
+            top: 120px;
+        }
+
+        .hr {
+            border: #dfdcda 1px solid;
+            position: absolute;
+            top: 200px;
+            left: 900px;
+            width: 465px;
+        }
+
+        .hr2 {
+            border: #dfdcda 1px solid;
+            position: absolute;
+            top: 380px;
+            left: 900px;
+            width: 465px;
+        }
+
+        .border10 {
+            border: 1px solid black;
+            border-radius: 25px 25px 25px 25px;
+            width: 316px;
+            height: 46px;
+            position: absolute;
+            top: 280px;
+            left: 900px;
+        }
+
+        .ziti9 {
+            padding-left: 100px;
+            position: absolute;
+            top: 12px;
+            color: black;
+            text-decoration: none;
+        }
+
+        .ziti9:hover {
+            text-decoration: none;
+            color: black;
+            font-size: 17px;
+        }
+
+        .border11 {
+            border: 1px solid black;
+            border-radius: 50px 50px 50px 50px;
+            width: 46px;
+            height: 46px;
+            position: absolute;
+            top: 280px;
+            left: 1250px;
+            background: url("image/爱心.jpg") no-repeat 14.1px 13.2px;
+            -webkit-background-size: 20px 20px;
+        }
+
+        .yangshi1 {
+            position: absolute;
+            left: 14px;
+            top: 13px;
+            display: none;
+        }
+
+        .border11:hover .yangshi1 {
+            display: block;
+            z-index: 3;
+        }
+
+        .ziti10 {
+            font-size: 14px;
+            color: black;
+            position: absolute;
+            top: 480px;
+            left: 900px;
+        }
+
+        .yangshi2 {
+            position: absolute;
+            left: 900px;
+            top: 530px;
+        }
+
+        .yangshi3 {
+            position: absolute;
+            left: 1070px;
+            top: 530px;
+        }
+
+        .yangshi4 {
+            position: absolute;
+            left: 1240px;
+            top: 530px;
+        }
+
+        #xuanfu {
+            display: none;
+            border: 1px solid #f2f2f4;
+            width: 664px;
+            height: 592px;
+            background-color: white;
+            opacity: 0.98;
+            position: absolute;
+            top: -100px;
+            left: -450px;
+
+        }
+
+        .ziti11 {
+            font-size: 14px;
+            color: black;
+            text-align: center;
+        }
+
+        .border10:hover #xuanfu {
+            display: block;
+            z-index: 4;
+        }
+
+        .border12 {
+            border: 1px solid black;
+            border-radius: 10px 10px 10px 10px;
+            width: 360px;
+            height: 204px;
+        }
+
+        .quan {
+            border: 1px solid black;
+            border-radius: 50px 50px;
+            background-color: black;
+            width: 23px;
+            height: 23px;
+        }
+
+        .ycz {
+            z-index: 7;
+            color: black;
+        }
+    </style>
+</head>
+<body>
+<!-----框架---->
+<div id="content">
+    <div class="header">
+        <!--------图标和LOGO-------->
+        <ul>
+            <li><a href="#"><img src="image/icon1.png" alt="搜索" width="13" height="13" title="搜索"/> </a></li>
+            <li><a href="#"><img src="image/icon2.png" alt="个人" width="13" height="13" title="个人中心"/> </a></li>
+            <li><a href="#"><img src="image/icon3.png" alt="购物" width="13" height="13" title="收藏夹"/> </a></li>
+            <li><a href="#"><img src="image/icon4.png" alt="列表" width="13" height="10" title="分类"/> </a></li>
+            <li id="logo"><a href="#"><img src="image/logo.png" alt="LOGO" width="55" height="47" title="RICH"/></a>
+            </li>
+            <li><a href="#"><img src="image/icon5.png" alt="地图" width="10" height="14" title="实体店"/> </a></li>
+            <li class="wxa">
+                <a href="#">
+                    <img src="image/icon6.png" alt="微信" width="16" height="13" title="微信"/>
+                    <img src="image/wx.jpg" width="185" height="245.6" class="aa"/>
+                </a>
+            </li>
+            <li>
+                <a href="tencent://AddContact/?fromId=45&fromSubId=1&subcmd=all&uin=3255252963&fuin=&website=www.oicqzone.com">
+                    <img src="image/icon7.png" alt="QQ" width="12" height="14" title="QQ"/>
+                </a>
+            </li>
+            <li>
+                <a href="https://weibo.com/u/6458878404" target="_blank">
+                    <img src="image/icon8.png" alt="微博" width="15" height="12" title="微博"/>
+                </a>
+            </li>
+        </ul>
+        <!------水平线------->
+        <hr/>
+        <!------水平线结束------->
+    </div>
+    <!--------头部结束-------->
+
+    <div id="daohang">
+        <ul>
+            <li><a href="../香水、男装/香水.html">香水</a> </li>
+            <li><a href="../香水、男装/男装.html">男装</a> </li>
+            <li><a href="../女装/女装.html">女装</a></li>
+            <li><a href="../彩妆、论坛/彩妆.html">彩妆</a> </li>
+            <li><a href="../珠宝/珠宝.html">珠宝</a> </li>
+            <li><a href="../童装/童装.html">童装</a> </li>
+            <li><a href="../彩妆、论坛/论坛.html">论坛</a> </li>
+        </ul>
+    </div>
+    <a href="#"><img src="image/更多1.jpg" width="644px" height="433px" class="gengduo1" title="白金饰牌项链镶嵌钻石"/></a>
+    <a href="#"><img src="image/更多2.jpg" width="314px" height="342px" class="gengduo2" title="白金饰牌项链镶嵌钻石"/></a>
+    <a href="#"><img src="image/更多3.jpg" width="314px" height="342px" class="gengduo3" title="白金饰牌项链镶嵌钻石"/></a>
+
+    <h2>RICH DES VENTS 750/1000白金饰牌项链镶嵌钻石</h2>
+    <hr class="hr"/>
+    <!--隐藏界面开始-->
+    <div class="border10"><a href="#" class="ziti9">查看精品库存
+        <div id="xuanfu" class="ziti11">
+            <div style="position: absolute;top:25px;left: 290px">查看精品库存</div>
+            <div style="position: absolute;left: 30px;top: 75px;"><img src="image/更多3.jpg" width="210" height="228"/>
+            </div>
+            <div style="position: absolute;left: 30px;top: 320px;font-size:14px">RICH DES VENTS 750/1000白金<br/>饰牌项链镶嵌钻石
+            </div>
+            <div style="position: absolute;left: 290px;top: 75px;font-size:14px">精品店</div>
+            <div class="border12" style="position: absolute;top: 110px;left: 290px">
+                <!--圆圈1-->
+                <div class="quan" style="position: absolute;left: 10px;top: 10px;"><span style="z-index: 6;color: white;
+                position: absolute;left: 7px;top: 2px">1</span></div>
+                <!--圆圈结束-->
+                <div style="position: absolute;top: 15px;left: 35px;text-align: center">
+                    RICH-SHANGHAL PLAZA66<br/>
+                    库存有限<br/><br/>
+                    shop 125-12,polaz 66,no.1226nanjingxi road<br/>
+                    200040 shanghai<br/>
+                    +86 4001 208 654<br/><br/>
+                    营业：今天至22：00<br/>
+                    服务：个人建议<br/>
+                </div>
+            </div>
+            <div class="border12" style="position: absolute;top: 350px;left: 290px">
+                <!--圆圈2-->
+                <div class="quan" style="position: absolute;left: 10px;top: 10px;"><span style="z-index: 6;color: white;
+                position: absolute;left: 7px;top: 2px">2</span></div>
+                <!--圆圈结束-->
+                <div style="position: absolute;top: 15px;left: 35px;text-align: center">
+                    RICH-SHANGHAL PLAZA66<br/>
+                    库存有限<br/><br/>
+                    shop 125-12,polaz 66,no.1226nanjingxi road<br/>
+                    200040 shanghai<br/>
+                    +86 4001 208 654<br/><br/>
+                    营业：今天至22：00<br/>
+                    服务：个人建议<br/>
+                </div>
+            </div>
+        </div>
+    </a></div>
+    <!--隐藏界面结束-->
+    <div class="border11"><img src="image/红色爱心.png" width="20" height="20" class="yangshi1"/></div>
+    <hr class="hr2"/>
+    <div class="ziti10">备有其他选择</div>
+    <div class="yangshi2">
+        <a href="#"><img src="image/其他选择1.jpg" title="镶钻" width="150" height="150"/></a>
+    </div>
+    <div class="yangshi3">
+        <a href="#"><img src="image/其他选择2.jpg" title="镶钻" width="150" height="150"/></a>
+    </div>
+    <div class="yangshi4">
+        <a href="#"><img src="image/其他选择3.jpg" title="镶钻" width="150" height="150"/></a>
+    </div>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,218 @@
+#img{
+    /*大小*/
+    width: 1366px;
+    height: 2300px;
+    margin: 10px auto 0 auto;
+    position: absolute;
+    top: 120px;
+}
+#huahua{
+    /**图片花花香水*/
+    margin-top:50px;
+
+}
+
+ul{
+    text-decoration:none;
+}
+.zi{
+    margin-left: 830px;
+    margin-top: -550px;
+    font-size: 32px;
+    color: black;
+}
+.xian{
+    margin-left: 830px;
+    margin-top: 35px;
+}
+.zi1{
+    margin-left: 830px;
+    margin-top:35px;
+    font-size: 18px;
+    color: #999999;
+}
+.zi2{
+    margin-left: 830px;
+    margin-top:5px;
+    font-size: 18px;
+    color: #999999;
+}
+
+.kuang {
+    position: relative;
+    padding-left: 90px;
+    line-height: 300px;
+    background-color: #e7e7e6;
+    width: 235px;
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 35px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.diyigea{
+    line-height: 50px;
+    display: none;
+    left: 0px;
+    position: absolute;
+    bottom:0px;
+    width: 250px;
+    height: 50px;
+    background: #323c3c;
+}
+a{
+    text-decoration:none;
+    color: white;
+}
+.kuang:hover .diyigea{
+    display: block;
+}
+.kuang1:hover .diyigea{
+    display: block;
+}
+.kuang2:hover .diyigea{
+    display: block;
+}
+.diergea{
+    position: absolute;
+    margin-top: -430px;
+    margin-left:-75px ;
+    color:black;
+}
+.disangea{
+    position: absolute;
+    margin-top: -430px;
+    margin-left:-75px ;
+    color:black;
+}
+.wuzhe{  /* 五折   */
+    color:red;
+    margin-left: 95px;
+    margin-top: -430px;
+}
+.sizhe{  /* 四折   */
+    color:red;
+    margin-left: 170px;
+    margin-top: -430px;
+}
+.wenz1{
+    color: #999999;
+    margin-left:-114px;
+}
+.wenz1:hover{
+    color: black;
+}
+.kuang1{
+    position: relative;
+    line-height: 300px;
+    padding-left: 90px;
+    background-color: #e7e7e6;
+    width: 235px;
+    height: 300px;
+    margin-top:130px;
+    margin-left: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.kuang2{
+    position: relative;
+    line-height: 300px;
+    padding-left: 90px;
+    background-color: #e7e7e6;
+    width: 235px;
+    height: 300px;
+    margin-top:130px;
+    margin-left: 30px;
+    display: inline-block;
+    box-sizing: border-box;
+
+}
+.dianji1{       /*点击购买黑色背景*/
+    background:black;
+    width: 165px;
+    height:50px;
+    margin-left: 75px;
+    margin-top: 20px;
+}
+.goumai1{           /*点击购买文字*/
+    margin-left: 50px;
+    line-height: 50px;
+}
+.dianji2{       /*点击购买黑色背景*/
+    background:black;
+    width: 165px;
+    height:50px;
+    margin-left:345px;
+    margin-top: -50px;
+}
+.goumai2{           /*点击购买文字*/
+    margin-left: 50px;
+    line-height: 50px;
+}
+.dianji3{       /*点击购买黑色背景*/
+    background:black;
+    width: 165px;
+    height:50px;
+    margin-left:622px;
+    margin-top: -50px;
+}
+.goumai3{           /*点击购买文字*/
+    margin-left: 50px;
+    line-height: 50px;
+}
+.daping{
+    margin-left: 850px;
+    margin-top: -490px;
+}
+.sangguo{
+    margin-top: -3px;
+}
+.xiakuang {
+    position: relative;
+    padding-left: 150px;
+    line-height:20px;
+    background-color: #e7e7e6;
+    width: 235px;
+    height: 300px;
+    bottom: 480px;
+    margin-left:1020px;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.xiadiyigea{
+    line-height: 50px;
+    left: 55px;
+    position: absolute;
+    bottom:90px;
+    background: #252320;
+}
+.xiamdiyi{  /*下面第一个*/
+    position: absolute;
+    margin-top: -760px;
+    margin-left:1200px ;
+    color:red;
+}
+.xiawenzi1{
+    color: #999999;
+    margin-left:991px;
+    margin-top: -480px;
+}
+.xiawenzi1:hover{
+    color: black;
+}
+.shanchuxian{
+    color: #999999;
+    text-decoration:line-through;
+}
+.xiadianji3{       /*点击购买黑色背景*/
+    background:black;
+    width: 165px;
+    height:50px;
+    margin-left:1060px;
+    margin-top: 25px;
+}
+.xiagoumai3{           /*点击购买文字*/
+    margin-left: 50px;
+    line-height: 50px;
+}

@@ -1,0 +1,77 @@
+/*从左至右转场*/
+@keyframes danruz {
+    0%{
+        -webkit-transform: translateX(-1366px);
+        -moz-transform: translateX(-1366px);
+        -ms-transform: translateX(-1366px);
+        -o-transform: translateX(-1366px);
+        transform: translateX(-1366px);
+        opacity: 0.5;
+    }
+    100%{
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        opacity: 1;
+
+    }
+}
+/*从右至左转场*/
+
+@keyframes danruy {
+    0%{
+        -webkit-transform: translateX(1366px);
+        -moz-transform: translateX(1366px);
+        -ms-transform: translateX(1366px);
+        -o-transform: translateX(1366px);
+        transform: translateX(1366px);
+        opacity: 0.5;
+    }
+    100%{
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        opacity: 1;
+
+    }
+}
+
+@keyframes zcxia {
+    0%{
+        -webkit-transform: translateY(800px);
+        -moz-transform: translateY(800px);
+        -ms-transform: translateY(800px);
+        -o-transform: translateY(800px);
+        transform: translateY(800px);
+        opacity: 0.5;
+    }
+    100%{
+        -webkit-transform: translate(0);
+        -moz-transform: translate(0);
+        -ms-transform: translate(0);
+        -o-transform: translate(0);
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+
+#zcxia {
+    -webkit-animation: zcxia 1s;
+    -o-animation: zcxia 1s;
+    animation: zcxia 1s;
+}
+#zcyou{
+    -webkit-animation: danruy 1s;
+    -o-animation: danruy 1s;
+    animation: danruy 1s;
+}
+
+#zczuo{
+    -webkit-animation: danruz 1s;
+    -o-animation: danruz 1s;
+    animation: danruz 1s;
+}

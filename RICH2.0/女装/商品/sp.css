@@ -1,0 +1,190 @@
+
+p:hover{
+    color:red;
+}
+
+.hongse{
+    color: red;
+    font-weight: bold;
+}
+
+/*÷˜ÃÂ*/
+body {
+    margin: 0;
+    padding: 0;
+    overflow: auto;
+    cursor: pointer;
+}
+
+#zcyou {
+    /*øÚº‹…Ë÷√*/
+    position: relative;
+    width: 700px;
+    cursor: pointer;
+
+}
+
+#fanhui img:hover{
+    -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.youbian{
+    position: absolute;
+    top: 10px;
+    left: 320px;
+}
+.zgpp{
+    font-size: 13px;
+    margin-left: 8px;
+}
+#jg{
+    padding: 10px;
+    width: 400px;
+    height: 80px;
+    background: linear-gradient(to right,rgba(20,20,20,0.5),rgba(20,20,20,0.7));
+}
+#jg ul , #jg li{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.qianmz{
+    font-size: 13px;
+    color: #f5f5f5;
+}
+.yuanjia{
+    font-size: 13px;
+    color: #222222;
+    text-decoration: line-through;
+}
+
+.cx{
+    font-size: 18px;
+    color: #333;
+}
+.cuxiao{
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+.jks{
+    font-size: 13px;
+    color: #222222;
+}
+.xiaoliang{
+    margin-top: 20px;
+    margin-left: 50px;
+    border: 1px dotted;
+    border-width: 1px 0 1px 0;
+    border-color: #000;
+    text-align: center;
+    width: 300px;
+    height: 40px;
+    line-height: 40px;
+}
+#goumai{
+    width: 800px;
+    height: 60px;
+    position: absolute;
+    top: 300px;
+    left: 20px;
+}
+.cc{
+    line-height: 40px;
+}
+.liji{
+    outline: none;
+    border: 0 none;
+    margin-left: 90px;
+    background: #666;
+    width: 150px;
+    height: 40px;
+    color: white;
+}
+.liji:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.liji:active{
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+.gwc{
+    cursor: pointer;
+    border: 0 none;
+    outline: none;
+    margin-left: 90px;
+    background: #333;
+    width: 150px;
+    height: 40px;
+    color: white;
+
+}
+.gwc:hover{
+    -webkit-transform: scale(1.1);
+    -moz-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    -o-transform: scale(1.1);
+    transform: scale(1.1);
+    -webkit-transition: 0.8s;
+    -moz-transition: 0.8s;
+    -ms-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s;
+}
+.gwc:active{
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: 0.5s;
+    -moz-transition: 0.5s;
+    -ms-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s;
+}
+ canvas {
+     background-color: white;
+     cursor: zoom-in;
+     position: absolute;
+     top: 0px;
+     left: 5px;
+ }
+
+canvas#canvas1 {
+    z-index: 1;
+    border: 5px solid #333;
+}
+
+canvas#canvas2 {
+    z-index: 2;
+    left: 0px;
+    top: 10px;
+    border: thin dashed black;
+    display: none;
+}

@@ -1,0 +1,463 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <link rel="stylesheet" href="../转场.css"/>
+    <style rel="stylesheet" type="text/css">
+        @keyframes zhengfan {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
+        }
+        .xinshoucang p:nth-of-type(1):hover .fanmian {
+            -webkit-animation: zhengfan 1.5s;
+            -o-animation: zhengfan 1.5s;
+            animation: zhengfan 1.5s;
+            display: block;
+        }
+
+        .xinshoucang p:nth-of-type(1):active {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+        body{
+            cursor: pointer;
+            height: 2400px;
+            overflow: hidden;
+        }
+        .image1a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image1111a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+
+        .xinshoucang p:nth-of-type(1):hover .fanmian {
+            -webkit-animation: zhengfan 1.5s;
+            -o-animation: zhengfan 1.5s;
+            animation: zhengfan 1.5s;
+            display: block;
+        }
+
+        .xinshoucang p:nth-of-type(1):active {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+            -webkit-transition: 0.2s;
+            -moz-transition: 0.2s;
+            -ms-transition: 0.2s;
+            -o-transition: 0.2s;
+            transition: 0.2s;
+        }
+
+        .image2a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image2a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+
+        .image3a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image3333a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+
+        .image4a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image4a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+
+        .image5a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image5a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+
+        .image6a {
+            padding: 0;
+            margin: 0;
+            background: url("image/image666a.png") no-repeat;
+            width: 271px;
+            height: 261px;
+            display: inline-block;
+        }
+        .xinshoucang > ul, .xinshoucang > li {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
+
+        .xinshoucang li {
+            position: relative;
+        }
+
+        .left1a {
+            height: 300px;
+            position: relative;
+            bottom: 50px;
+            margin: 0 0 0 20px;
+            padding: 0;
+            display: inline-block;
+            list-style: none;
+        }
+
+        .fanmian {
+            position: absolute;
+            top: 0px;
+            left: 0;
+            display: none;
+        }
+
+        .diyi:hover .fanmian {
+            display: block;
+        }
+
+        .tese {
+            color: #7d7d7e;
+            font-size: 11.5px;
+            line-height: 30px;
+            height: 30px;
+            width: 120px;
+            text-align: center;
+            border: 2px #b5b1b0 solid;
+            margin-bottom: 40px;
+        }
+
+        .tese:hover {
+            -webkit-transform: scale(1.1);
+            -moz-transform: scale(1.1);
+            -ms-transform: scale(1.1);
+            -o-transform: scale(1.1);
+            transform: scale(1.1);
+            -webkit-transition: 1s;
+            -moz-transition: 1s;
+            -ms-transition: 1s;
+            -o-transition: 1s;
+            transition: 1s;
+        }
+
+        .tese:active {
+            -webkit-transform: scale(0.9);
+            -moz-transform: scale(0.9);
+            -ms-transform: scale(0.9);
+            -o-transform: scale(0.9);
+            transform: scale(0.9);
+            /*-webkit-transition: 0.s;*/
+            /*-moz-transition: 1s;*/
+            /*-ms-transition: 1s;*/
+            /*-o-transition: 1s;*/
+            /*transition: 1s;*/
+        }
+
+        .mingzi {
+            font-weight: bold;
+            color: #424142;
+            font-size: 20px;
+            height: 35px;
+            margin-bottom: 20px;
+        }
+
+        .mingzi:hover {
+            cursor: cell;
+        }
+
+        .peise {
+            height: 40px;
+            color: #6d6d6d;
+            font-size: 15px;
+        }
+
+        .jieshao {
+            color: #aaaaaa;
+            font-size: 14px;
+        }
+
+        .jieshao:hover {
+            color: #666;
+        }
+
+        .qian {
+            font-size: 15px;
+            color: #bbbaba;
+            text-decoration: line-through;
+        }
+
+        .qian:hover {
+            cursor: not-allowed;
+        }
+
+        .hou {
+            color: #7d7d7e;
+            font-size: 16px;
+        }
+
+        .color1 {
+            display: inline-block;
+        }
+
+        .color2 {
+            display: inline-block;
+        }
+
+        .xian {
+            display: none;
+            top: 28px;
+            position: absolute;
+            width: 80px;
+            height: 2px;
+            left: 0;
+            background: #101010;
+        }
+
+        .peise:hover .xian {
+            display: block;
+            -webkit-animation: xian 0.5s linear;
+            -o-animation: xian 0.5s linear;
+            animation: xian 0.5s linear;
+        }
+
+        @keyframes xian {
+            0% {
+                width: 0;
+            }
+            100% {
+                width: 80px;
+            }
+        }
+
+        .color1:hover .xian {
+            display: block;
+            -webkit-animation: xian 0.3s linear;
+            -o-animation: xian 0.3s linear;
+            animation: xian 0.3s linear;
+        }
+
+        .lijigoumai {
+            border: 1px solid #cccccc;
+            -webkit-border-radius: 5px;
+            -moz-border-radius: 5px;
+            border-radius: 5px;
+            margin: 0;
+            padding: 0;
+            display: inline-block;
+            background: #030000;
+            width: 200px;
+            height: 60px;
+            line-height: 60px;
+            position: absolute;
+            top: 100px;
+            right: 20px;
+        }
+
+        .lijigoumai:hover {
+            color: white;
+            -webkit-transform: scale(1.05);
+            -moz-transform: scale(1.05);
+            -ms-transform: scale(1.05);
+            -o-transform: scale(1.05);
+            transform: scale(1.05);
+            -webkit-transition: 0.5s;
+            -moz-transition: 0.5s;
+            -ms-transition: 0.5s;
+            -o-transition: 0.5s;
+            transition: 0.5s;
+            background: #390013;
+        }
+
+        .lijigoumai:active {
+            -webkit-transform: scale(0.96);
+            -moz-transform: scale(0.96);
+            -ms-transform: scale(0.96);
+            -o-transform: scale(0.96);
+            transform: scale(0.96);
+            -webkit-transition: 0.3s;
+            -moz-transition: 0.3s;
+            -ms-transition: 0.3s;
+            -o-transition: 0.3s;
+            transition: 0.3s;
+        }
+
+        .lijigoumai a {
+            color: #c1c0c0;
+            text-decoration: none;
+        }
+
+        .lijigoumai .image22 {
+            margin-right: 20px;
+            margin-left: 30px;
+        }
+        .meiyl{
+            text-align: center;
+            position:relative;
+            bottom: 80px;
+            cursor: alias;
+        }
+    </style>
+</head>
+<body id="zcxia">
+<div class="xinshoucang">
+    <ul>
+        <li>
+            <p class="image1a">
+                <img src="image/image1111b.png" alt="第一件反面" title="BOULE波点印花涤纶迷你连衣裙" class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">手工刺绣真丝乔其纱裹身连衣裙</li>
+                <li class="peise">
+                    <span class="color1">黑色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">象牙色<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">BOULE波点印花涤纶迷你连衣裙</li>
+                <li><span class="qian">￥555500</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥499999.99</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <!----------------第二件------------->
+        <li>
+            <p class="image2a">
+                <img src="image/image2b.png" alt="第二件反面" title="荷叶边抹胸上衣羊毛真丝混纺修身迷你裙"
+                     class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">荷叶边抹胸上衣羊毛真丝混纺修身迷你裙</li>
+                <li class="peise">
+                    <span class="color1">黑色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">米白色<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">荷叶边抹胸上衣羊毛真丝混纺修身迷你裙</li>
+                <li><span class="qian">￥49500</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥45000</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <!----------------第三件------------->
+        <li>
+            <p class="image3a">
+                <img src="image/image3333b.png" alt="第三件反面" title="新浪潮金属质感小羊皮连衣裙" class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">新浪潮金属质感小羊皮连衣裙</li>
+                <li class="peise">
+                    <span class="color1">金色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">珍珠白<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">新浪潮金属质感小羊皮连衣裙</li>
+                <li><span class="qian">￥49500</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥49000</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <!----------------第四件------------->
+        <li>
+            <p class="image4a">
+                <img src="image/image4b.png" alt="第四件反面" title="V领垂衣SABLE面料连衣裙" class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">V领垂衣SABLE面料连衣裙</li>
+                <li class="peise">
+                    <span class="color1">黑色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">麻点灰<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">V领垂衣SABLE面料连衣裙</li>
+                <li><span class="qian">￥30000</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥25000</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <!----------------第五件------------->
+        <li>
+            <p class="image5a">
+                <img src="image/image5b.png" alt="第五件反面" title="羽毛饰带真丝乔其纱抹胸上衣垂衣连衣裙"
+                     class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">羽毛饰带真丝乔其纱抹胸上衣垂衣连衣裙</li>
+                <li class="peise">
+                    <span class="color1">黑色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">淡黑色<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">羽毛饰带真丝乔其纱抹胸上衣垂衣连衣裙</li>
+                <li><span class="qian">￥25000</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥22000</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <!----------------第六件------------->
+        <li>
+            <p class="image6a">
+                <img src="image/image666b.png" alt="第六件反面" title="和服式短袖同系配色真丝连衣裙" class="fanmian"/>
+            </p>
+            <ul class="left1a">
+                <li class="tese" title="特色">特色</li>
+                <li class="mingzi">和服式短袖同系配色真丝连衣裙</li>
+                <li class="peise">
+                    <span class="color1">黑色<span class="xian"></span> </span>
+                    &nbsp;<span class="color2">淡灰色<span class="xian2"></span></span>
+                </li>
+                <li class="jieshao">和服式短袖同系配色真丝连衣裙</li>
+                <li><span class="qian">￥19000</span> &nbsp;<span class="hou"
+                                                                 title="立即购买">￥17000</span></li>
+            </ul>
+            <p class="lijigoumai" title="立即购买">
+                <a href="#"><img src="image/购物.png" alt="购物" class="image22" align="center"/>
+                    立即购买</a>
+            </p>
+        </li>
+        <li class="meiyl">
+            啊喔 只能显示这么多了~
+        </li>
+    </ul>
+</div>
+
+</body>
+</html>

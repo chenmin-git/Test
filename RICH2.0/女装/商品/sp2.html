@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>RICH</title>
+    <link rel="icon" href="image/logo.ico"/>
+    <link rel="stylesheet" href="sp.css" type="text/css"/>
+    <link rel="stylesheet" href="../../转场.css"/>
+</head>
+<script>
+    function window_onload() {
+        var canvas1 = document.getElementById('canvas1');//获取显示原图的canvas元素
+        if (canvas1 == null)
+            return false;
+        context = canvas1.getContext('2d'); //获取显示原图的canvas元素的图形上下文对象
+//获取图像源
+        var image = new Image();
+        image.src = "image/image2b.png";
+//绘制原图
+        image.onload = function () {
+            context.drawImage(image, 0, 0);
+        }
+        canvas1.onmousemove = canvas1_onmouse_move;//添加原图像获取鼠标焦点时的处理函数
+        canvas1.onmouseout = canvas1_onmouse_out;//添加原图像失去鼠标焦点时的处理函数
+    }
+    //原图像获取鼠标焦点时的处理函数
+    function canvas1_onmouse_move(ev) {
+        var canvas1, canvas2;//原图像使用的canvas元素与放大镜中图像使用的canvas元素
+        var x, y;//鼠标在canvas元素中的相对坐标点
+        var drawWidth, drawHeight;//鼠标所指区域的宽度与高度
+        canvas1 = document.getElementById("canvas1");//获取原图像使用的canvas元素
+        canvas2 = document.getElementById("canvas2");//获取放大镜中图像使用的canvas元素
+        var context = canvas2.getContext('2d'); //获取放大镜中图像使用的canvas元素的图形上下文对象
+        canvas2.style.display = "inline"; //显示放大镜
+        context.clearRect(0, 0, canvas2.width, canvas2.height);//擦除放大镜中原图像
+        x = ev.pageX - canvas1.offsetLeft + 2;//鼠标在canvas元素中X轴上的相对坐标点+2,+2是为了避免鼠标移动到放大镜上
+        y = ev.pageY - canvas1.offsetTop + 2;//鼠标在canvas元素中Y轴上的相对坐标点+2,+2是为了避免鼠标移动到放大镜上
+        canvas2.style.left = (ev.pageX + 2) + "px";//设置放大镜在原图上的X轴上的坐标点
+        canvas2.style.top = (ev.pageY + 2) + "px";//设置放大镜在原图上的Y轴上的坐标点
+//获取放大镜图像的图像源
+        var image = new Image();
+        image.src = "image/image2b.png";
+//获取鼠标所指区域的宽度
+        if (x + 40 > canvas1.width)//如果鼠标所指区域的宽度超出原图宽度
+            drawWidth = canvas1.width - x;//设置鼠标所指区域宽度为原图中剩余宽度
+        else
+            drawWidth = 200;//设置鼠标所指区域的宽度为40像素
+//获取鼠标所指区域的高度
+        if (y + 40 > canvas1.height)//如果鼠标所指区域的高度超出原图高度
+            drawHeight = canvas1.height - y;//设置鼠标所指区域高度为原图中剩余高度
+        else
+            drawHeight = 200;//设置鼠标所指区域的高度为40像素
+//放大2倍绘制放大镜图像
+        context.drawImage(image, x, y, drawWidth, drawHeight, 0, 0, drawWidth * 2, drawHeight * 2);
+    }
+    //鼠标移出原图像外
+    function canvas1_onmouse_out() {
+        var canvas2 = document.getElementById("canvas2");//获取放大镜所用canvas元素
+//重置canvas元素的位置
+        canvas2.style.left = "0px";
+        canvas2.style.top = "0px";
+//隐藏放大镜
+        canvas2.style.display = "none";
+    }
+</script>
+<body onload="window_onload()">
+<a name="db"></a>
+
+<div id="fanhui">
+    <a href="#"><img src="image/返回.png" onclick="javascript:history.back(-1)" width="50" title="返回"/></a>
+</div>
+<div id="zcyou">
+    <div id="fdj">
+        <article>
+            <canvas id="canvas1" width="271px" height="261px"></canvas>
+            <canvas id="canvas2" width="350" height="350"></canvas>
+        </article>
+    </div>
+    <div class="youbian">
+        <span class="zgpp"><img src="image/logo.png" width="16"/> &nbsp;中国品牌 菜鸟杭州保税13号仓发货 </span>
+
+        <p>【直营】 荷叶边抹胸上衣羊毛真丝混纺修身迷你裙</p>
+
+        <div id="jg">
+            <ul>
+                <li><span class="qianmz">价格：</span> &nbsp;<span class="yuanjia">￥49500.00</span></li>
+                <li><span class="qianmz">促销价：</span> &nbsp;<span class="cx">￥</span> <span class="cuxiao">￥45000.00</span>
+                </li>
+                <li><span class="qianmz">进口税：</span> &nbsp;<span class="jks">预计49.17-62.50元</span></li>
+            </ul>
+        </div>
+        <p><span class="jks">运费： &nbsp;香港至菜鸟杭州保税13号仓至岳阳>岳阳楼区满10000元包邮</span></p>
+
+        <div class="xiaoliang">
+            <span class="jks">月销量</span> &nbsp;<span class="hongse">666</span>
+            &nbsp;&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;&nbsp;<span class="jks">累计评论</span>
+            &nbsp;<span class="hongse">999</span>
+        </div>
+    </div>
+    <div id="goumai">
+        <p class="cc">
+            <span class="jks">尺寸</span>&nbsp;
+            <input type="radio" name="size" id="s" checked>&nbsp;
+            <label for="s">S</label>&nbsp;
+            <input type="radio" name="size" id="m">&nbsp;
+            <label for="m">M</label>&nbsp;
+            <input type="radio" name="size" id="l">&nbsp;
+            <label for="l">L</label>&nbsp;
+            <input type="radio" name="size" id="xl">&nbsp;
+            <label for="xl">XL</label>
+            <input type="submit" class="liji" value="立即购买"/>
+            <input type="submit" class="gwc" value="加入购物车"/>
+        </p>
+        <br/>
+
+        <p class="jks" align="left">服务承诺： 过敏包退 、 破损包退 、 正品保障 、 晚到必赔 、 七天无理由退 、 进口保税赠运费险</p>
+    </div>
+</div>
+</body>
+</html>
